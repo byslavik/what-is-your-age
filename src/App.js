@@ -25,20 +25,20 @@ import Pekin from './img/pekin.jpg';
 import Final from './img/final.png';
 
 import Q1 from './img/q1.jpg';
-import Q2 from './img/q2.jpeg';
-import Q3 from './img/q3.jpeg';
-import Q4 from './img/q4.jpeg';
-import Q5 from './img/q5.jpeg';
+import Q2 from './img/q2.jpg';
+import Q3 from './img/q3.jpg';
+import Q4 from './img/q4.jpg';
+import Q5 from './img/q5.jpg';
 import Q6 from './img/q6.jpg';
 import Q7 from './img/q7.jpg';
 import Q8 from './img/q8.jpg';
 import Q9 from './img/q9.jpg';
 import Q10 from './img/q10.jpg';
-import Q11 from './img/q11.jpeg';
+import Q11 from './img/q11.jpg';
 import Q12 from './img/q12.jpg';
-import Q13 from './img/q13.jpeg';
+import Q13 from './img/q13.jpg';
 import Q14 from './img/q14.jpg';
-import Q15 from './img/q15.jpeg';
+import Q15 from './img/q15.jpg';
 
 import MainImg from './img/main.png';
 import Age from './img/age.jpg';

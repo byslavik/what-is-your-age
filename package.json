@@ -1,10 +1,11 @@
 {
-  "name": "coctail-selector",
+  "name": "what-is-my-age",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hardhorse.github.io/coctail-selector/",
+  "homepage": "https://hardhorse.github.io/what-is-my-age/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.57",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",

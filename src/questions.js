@@ -1,157 +1,350 @@
-export const COCTAILS = {
-    california: 'Калифорния',
-    hodimPoKrau: 'Ходим по краю',
-    lubovBexPamyati: 'Любовь без памяти',
-    solncaNeVidno: 'Солнца не видно',
-    chistyKaif: 'Чистый кайф',
-    moyaVselennaya: 'Моя вселенная',
-};
+
 
 
 export const questions = [
     {
-        question: "Какое описание вам больше всего подходит?",
+        question: "Какой ТЦ вам больше приходится по душе?",
+        comment: "Ну а как же? Ведь его название ассоциируется с городом, где вы родились!",
+        img: "q1",
         options: [
             {
-                key: COCTAILS.california,
-                label: "Я сладкий/ая, т.к. меня уронили в детстве в сироп."
+                key: false,
+                label: "Силуэт;"
             },
             {
-                key: COCTAILS.hodimPoKrau,
-                label: "Я не страдаю безумием... Я им наслаждаюсь. "
+                key: true,
+                label: "Рига;"
             },
             {
-                key: COCTAILS.lubovBexPamyati,
-                label: "Когда красивым налево, а умным направо, мне хоть разорвись."
+                key: false,
+                label: "Green City;"
             },
             {
-                key: COCTAILS.solncaNeVidno,
-                label: "He люблю я хамов. Зачем мне конкyренты?"
+                key: false,
+                label: "Dana Mall."
             },
-            {
-                key: COCTAILS.chistyKaif,
-                label: "Я с вами себя таким/ой умным/ой чувствую."
-            },
-            {
-                key: COCTAILS.moyaVselennaya,
-                label: "Я - как хорошее вино: с годами становлюсь крепче, насыщеннее и ярче."
-            }
         ]
     },
 
     {
-        question: "Ваше идеальное времяпрепровождение?",
+        question: "Если бы вы были советским Джеймсом Бондом, на каком автомобиле вы бы ездили?",
+        comment: "Этот автомобиль вам особенно дорог, ведь такой стоял у вашего дедушки в гараже.",
+        img: "q2",
         options: [
             {
-                key: COCTAILS.chistyKaif,
-                label: "Я бы весь день валялся/лась на пляже!"
+                key: false,
+                label: "Москвич;"
             },
             {
-                key: COCTAILS.moyaVselennaya,
-                label: "Лучший досуг - проведенный с умом, поэтому почитал/ла бы книгу."
+                key: false,
+                label: "ЗИЛ;"
             },
             {
-                key: COCTAILS.lubovBexPamyati,
-                label: "Яхта, море и ветер в волосах."
+                key: true,
+                label: "ГАЗ;"
             },
             {
-                key: COCTAILS.solncaNeVidno,
-                label: "Прыгнул/ла бы с парашютом. А вообще, любой активный отдых."
-            },
-            {
-                key: COCTAILS.hodimPoKrau,
-                label: "Пойду на рейв."
-            },
-            {
-                key: COCTAILS.california,
-                label: "Время с семьей - это идеально."
+                key: false,
+                label: "Мопед «Верховина» - самое то."
             }
         ]
     },
     {
-        question: "Какую песню вы бы хотели, чтобы DJ поставил именно для вас?",
+        question: "Каким бы сказочным персонажем вы хотели бы стать?",
+        comment: "Еще бы! Столько времени провести под водой не каждый сможет! Во дворце водного спорта до сих пор ходят об этом слухи.",
+        img: "q3",
         options: [
             {
-                key: COCTAILS.hodimPoKrau,
-                label: "Моргенштерн - самое оно!"
+                key: false,
+                label: "Карлсон;"
             },
             {
-                key: COCTAILS.chistyKaif,
-                label: "Я бы повальсировал/ла под Моцарта..."
+                key: false,
+                label: "Старик Хоттабыч;"
             },
             {
-                key: COCTAILS.california,
-                label: "Что-нибудь из репертуара Энрике Иглесиаса..."
+                key: false,
+                label: "Соловей-разбойник;"
             },
             {
-                key: COCTAILS.solncaNeVidno,
-                label: "Душа просит Queen!"
+                key: true,
+                label: "Человек-амфибия."
+            },
+        ]
+    },
+    {
+        question: "Представьте, вы задумали приготовить салат из свежих овощей. Куда бы вы отправились за ингредиентами для него?",
+        comment: "Естественно! Ведь здесь до сих пор сохранилось место, где вы заработали свой первый капитал!",
+        img: "q4",
+        options: [
+            {
+                key: false,
+                label: "В ближайший торговый центр;"
             },
             {
-                key: COCTAILS.moyaVselennaya,
-                label: "Мне так нравится Синатра!"
+                key: false,
+                label: "Я же дачник, собрал бы урожай со своих грядок;"
             },
             {
-                key: COCTAILS.lubovBexPamyati,
-                label: "А можно что-нибудь современное?"
+                key: true,
+                label: "Однозначно Комаровка;"
+            },
+            {
+                key: false,
+                label: "Передумал бы и приготовил салат с крабовыми палочками."
+            },
+        ]
+    },
+    {
+        question: "Какое лесное животное вам нравится больше?",
+        comment: "В яблочко! И вы знаете, что зубры есть не только в лесу!",
+        img: "q5",
+        options: [
+            {
+                key: true,
+                label: "Зубр;"
+            },
+            {
+                key: false,
+                label: "Заяц;"
+            },
+            {
+                key: false,
+                label: "Лиса;"
+            },
+            {
+                key: false,
+                label: "Еж."
+            },
+        ]
+    },
+    {
+        question: "Какой рекламный лозунг вам ближе?",
+        comment: "Ну конечно! Нархоз дает о себе знать!",
+        img: "q6",
+        options: [
+            {
+                key: false,
+                label: "Пупсик, биосистема;"
+            },
+            {
+                key: true,
+                label: "Заплати налоги и спи спокойно;"
+            },
+            {
+                key: false,
+                label: "Россия - щедрая душа;"
+            },
+            {
+                key: false,
+                label: "Время с Толстяком летит незаметно."
             }
         ]
     },
     {
-        question: "Как вы планируете закончить вечеринку?",
+        question: "Вы прекрасно владеете английским языком. Как правильно перевести на английский слово «темп»?",
+        comment: "Kelley Pace вами гордится!",
+        img: "q7",
         options: [
             {
-                key: COCTAILS.lubovBexPamyati,
-                label: "На афтепати в бассейне."
+                key: false,
+                label: "Temple;"
             },
             {
-                key: COCTAILS.moyaVselennaya,
-                label: "За душевными разговорами."
+                key: false,
+                label: "Swift;"
             },
             {
-                key: COCTAILS.hodimPoKrau,
-                label: "Танцуя всю ночь."
+                key: true,
+                label: "Pace;"
             },
             {
-                key: COCTAILS.california,
-                label: "С тортиком и кофейком."
-            },
-            {
-                key: COCTAILS.solncaNeVidno,
-                label: "Так, чтобы ничего не помнить на утро."
-            },
-            {
-                key: COCTAILS.chistyKaif,
-                label: "За рулем авто, слушая песни Меладзе по дороге домой."
+                key: false,
+                label: "Я учил монгольский, правильный ответ - хурд"
             }
         ]
     },
     {
-        question: "С чем у вас ассоциируется Настя?",
+        question: "Если бы у вас было желание пойти в бар, какой бар вы бы выбрали?",
+        comment: "Ксения на седьмом небе от счастья, что вы до сих пор помните место вашего знакомства с ней!",
+        img: "q8",
         options: [
             {
-                key: COCTAILS.lubovBexPamyati,
-                label: "Fashion;"
+                key: false,
+                label: "Диско-бар;"
             },
             {
-                key: COCTAILS.solncaNeVidno,
-                label: "Ремарк;"
+                key: true,
+                label: "Ковбой-бар;"
             },
             {
-                key: COCTAILS.chistyKaif,
-                label: "Бабочки;"
+                key: false,
+                label: "Пивбар;"
             },
             {
-                key: COCTAILS.hodimPoKrau,
-                label: "Искусственный интеллект;"
+                key: false,
+                label: "Кальян-бар."
+            }
+        ]
+    },
+    {
+        question: "Какая локация и погодные условия вам ближе всего?",
+        comment: "Лучше места для медового месяца сложно представить, верно?",
+        img: "q9",
+        options: [
+            {
+                key: false,
+                label: "Жара в Батон-Руж;"
             },
             {
-                key: COCTAILS.california,
-                label: "Задушевные беседы;"
+                key: false,
+                label: "Дождь в Пхукете;"
             },
             {
-                key: COCTAILS.moyaVselennaya,
-                label: "Искусство."
+                key: true,
+                label: "Мороз в Париже;"
+            },
+            {
+                key: false,
+                label: "Смог в Лондоне?"
+            }
+        ]
+    },
+    {
+        question: "Какой из приведенных ниже джазовых исполнителей вам нравится больше?",
+        comment: "И музыка чудесное, и имя ваше любимое!",
+        img: "q10",
+        options: [
+            {
+                key: false,
+                label: "Луи Армстронг;"
+            },
+            {
+                key: false,
+                label: "Фрэнк Синара;"
+            },
+            {
+                key: false,
+                label: "Сара Воан;"
+            },
+            {
+                key: true,
+                label: "Нина Симон."
+            }
+        ]
+    },
+    {
+        question: "Как лучше, на ваш взгляд, проводить время с детьми?",
+        comment: "Тими до сих пор помнит, как вы  ловили лобстеров майкой!",
+        img: "q11",
+        options: [
+            {
+                key: true,
+                label: "Отправиться на рыбалку;"
+            },
+            {
+                key: false,
+                label: "Заняться шопингом;"
+            },
+            {
+                key: false,
+                label: "Заказать пиццу и смотреть сериалы;"
+            },
+            {
+                key: false,
+                label: "Устроить бои на подушках."
+            }
+        ]
+    },
+    {
+        question: "Если бы все ваши средства нужно было срочно куда-то инвестировать, куда бы вы их направили:",
+        comment: "Пусть и спортинвентаря у вас уже хватит на целый тренажерный зал!",
+        img: "q12",
+        options: [
+            {
+                key: false,
+                label: "Костюмы;"
+            },
+            {
+                key: true,
+                label: "Тренажеры;"
+            },
+            {
+                key: false,
+                label: "Средства по уходу за волосами;"
+            },
+            {
+                key: false,
+                label: "Гречка (ведь говорят, что она скоро подорожает)."
+            }
+        ]
+    },
+    {
+        question: "Какого цвета галстук вы бы надели под белую рубашку?",
+        comment: "Без вариантов! Во первых, это один из корпоративных цветов компании «АВАНГАРД ЛИЗИНГ» (Дмитрий Валентинович счастлив, что вы ответили правильно), а еще это цвета нашего настоящего государственного флага.",
+        img: "q13",
+        options: [
+            {
+                key: false,
+                label: "Черный;"
+            },
+            {
+                key: true,
+                label: "Красный;"
+            },
+            {
+                key: false,
+                label: "Синий;"
+            },
+            {
+                key: false,
+                label: "Серый."
+            }
+        ]
+    },
+    {
+        question: "Как только границы будут открыты, страна/город, в которую/который вы отправились бы в первую очередь?",
+        comment: "Именно! Ведь вам не терпится навестить свою любимую бабушку!",
+        img: "q14",
+        options: [
+            {
+                key: false,
+                label: "Киев;"
+            },
+            {
+                key: false,
+                label: "Прага;"
+            },
+            {
+                key: true,
+                label: "Юрмала;"
+            },
+            {
+                key: false,
+                label: "Белосток, ведь там можно дешево купить кофе и стиральный порошок. "
+            }
+        ]
+    },
+    {
+        question: "Ка бы вы провели свободное время?",
+        comment: "Вам же нужно как-то догнать результаты Тими!",
+        img: "q15",
+        options: [
+            {
+                key: false,
+                label: "Лежа на диване;"
+            },
+            {
+                key: false,
+                label: "Читая книгу;"
+            },
+            {
+                key: false,
+                label: "Выкуривая сигару; "
+            },
+            {
+                key: true,
+                label: "Играя в PlayStation."
             }
         ]
     }

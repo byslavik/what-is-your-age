@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/what-is-my-age/static/css/main.e807003a.chunk.css",
+    "main.js": "/what-is-my-age/static/js/main.7d54b29c.chunk.js",
+    "main.js.map": "/what-is-my-age/static/js/main.7d54b29c.chunk.js.map",
+    "runtime-main.js": "/what-is-my-age/static/js/runtime-main.4516721e.js",
+    "runtime-main.js.map": "/what-is-my-age/static/js/runtime-main.4516721e.js.map",
+    "static/js/2.6e48e5e3.chunk.js": "/what-is-my-age/static/js/2.6e48e5e3.chunk.js",
+    "static/js/2.6e48e5e3.chunk.js.map": "/what-is-my-age/static/js/2.6e48e5e3.chunk.js.map",
+    "index.html": "/what-is-my-age/index.html",
+    "precache-manifest.4a43495ff152a9ff509efbf3428a3cd6.js": "/what-is-my-age/precache-manifest.4a43495ff152a9ff509efbf3428a3cd6.js",
+    "service-worker.js": "/what-is-my-age/service-worker.js",
+    "static/css/main.e807003a.chunk.css.map": "/what-is-my-age/static/css/main.e807003a.chunk.css.map",
+    "static/js/2.6e48e5e3.chunk.js.LICENSE.txt": "/what-is-my-age/static/js/2.6e48e5e3.chunk.js.LICENSE.txt",
+    "static/media/age.jpg": "/what-is-my-age/static/media/age.a79fa04f.jpg",
+    "static/media/button1.png": "/what-is-my-age/static/media/button1.66927169.png",
+    "static/media/button2.png": "/what-is-my-age/static/media/button2.ebf1df2b.png",
+    "static/media/main.png": "/what-is-my-age/static/media/main.22eba9e8.png",
+    "static/media/pekin.jpg": "/what-is-my-age/static/media/pekin.9533bf68.jpg",
+    "static/media/q1.jpg": "/what-is-my-age/static/media/q1.4102db76.jpg",
+    "static/media/q10.jpg": "/what-is-my-age/static/media/q10.4abd028a.jpg",
+    "static/media/q11.jpeg": "/what-is-my-age/static/media/q11.00758d92.jpeg",
+    "static/media/q12.jpg": "/what-is-my-age/static/media/q12.0b35344a.jpg",
+    "static/media/q13.jpeg": "/what-is-my-age/static/media/q13.dd6bf69f.jpeg",
+    "static/media/q14.jpg": "/what-is-my-age/static/media/q14.ba93a065.jpg",
+    "static/media/q2.jpeg": "/what-is-my-age/static/media/q2.aea19906.jpeg",
+    "static/media/q3.jpeg": "/what-is-my-age/static/media/q3.5c50511b.jpeg",
+    "static/media/q4.jpeg": "/what-is-my-age/static/media/q4.13ba331f.jpeg",
+    "static/media/q5.jpeg": "/what-is-my-age/static/media/q5.64e39db0.jpeg",
+    "static/media/q6.jpg": "/what-is-my-age/static/media/q6.872c989e.jpg",
+    "static/media/q7.jpg": "/what-is-my-age/static/media/q7.c1b0cbd3.jpg",
+    "static/media/q8.jpg": "/what-is-my-age/static/media/q8.ebb9fa46.jpg",
+    "static/media/q9.jpg": "/what-is-my-age/static/media/q9.d107f8b1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4516721e.js",
+    "static/js/2.6e48e5e3.chunk.js",
+    "static/css/main.e807003a.chunk.css",
+    "static/js/main.7d54b29c.chunk.js"
+  ]
+}

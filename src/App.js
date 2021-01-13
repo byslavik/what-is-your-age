@@ -16,7 +16,13 @@ import Alert from '@material-ui/lab/Alert';
 
 import Button1 from './img/button1.png';
 import Button2 from './img/button2.png';
+import Button3 from './img/button3.png';
+import Button4 from './img/button4.png';
+import Button5 from './img/button5.png';
+import Button6 from './img/button6.png';
+import Button7 from './img/button7.png';
 import Pekin from './img/pekin.jpg';
+import Final from './img/final.png';
 
 import Q1 from './img/q1.jpg';
 import Q2 from './img/q2.jpeg';
@@ -61,33 +67,57 @@ const imageMapping = {
 }
 
 const finalSlides = [
-  <Typography align="center" variant="h6">
-    Вы талантливый спортсмен, профессиональный финансист, любимый внук, сын, племянник, муж и отец, успешный бизнесмен, НО…
-  </Typography>,
-  <Typography align="center" variant="h6">
-    …в душе вы все еще ребенок, который при первой же возможности бежит играть в Call of Duty  на PlayStation
-  </Typography>,
-  <div>
+  ({ onClick }) => <div>
+    <Typography align="center" className="responsiveText">
+      Вы талантливый спортсмен, профессиональный финансист, любимый внук, сын, племянник, муж и отец, успешный бизнесмен, НО…
+    </Typography>
+    <button className='button' size="large" onClick={onClick}>
+      <img src={Button3} className='buttonImage' alt="Next" />
+    </button>
+  </div>,
+  ({ onClick }) => <div>
+    <Typography align="center" className="responsiveText">
+      …в душе вы все еще ребенок, который при первой же возможности бежит играть в Call of Duty  на PlayStation
+    </Typography>
+    <button className='button' size="large" onClick={onClick}>
+      <img src={Button4} className='buttonImage' alt="Next" />
+    </button>
+  </div>,
+  ({ onClick }) => <div>
     <img src={Age} className="imgWithBorder" alt="age" />
-    <Typography align="center" variant="h6">
+    <Typography align="center" className="responsiveText">
       Ваш реальный возраст – 5 лет
     </Typography>
+
+    <button className='button' size="large" onClick={onClick}>
+      <img src={Button5} className='buttonImage' alt="Next" />
+    </button>
   </div>,
-  <Typography align="center" variant="h6">
-    Удивительная особенность каждого ребенка – это способность и желание мечтать. И у вас была мечта – мечта побывать в Китае. Мечты должны сбываться!
-  </Typography>,
-  <div>
+  ({ onClick }) => <div>
+    <Typography align="center" className="responsiveText">
+      Удивительная особенность каждого ребенка – это способность и желание мечтать. И у вас была мечта – мечта побывать в Китае. Мечты должны сбываться!
+    </Typography>
+
+    <button className='button' size="large" onClick={onClick}>
+      <img src={Button6} className='buttonImage' alt="Next" />
+    </button>
+  </div>,
+  ({ onClick }) => <div>
     <img src={Pekin} className="imgWithBorder" alt="pekin" />
-    <Typography align="center" variant="h6">
+    <Typography align="center" className="responsiveText">
       Сегодня вас ждет чудесный отдых в Пекине!
     </Typography>
+
+    <button className='button' size="large" onClick={onClick}>
+      <img src={Button7} className='buttonImage' alt="Next" />
+    </button>
   </div>,
-  <Typography align="center" variant="h3">
+  () => <Typography align="center" className="responsiveText">
     <div class="pyro">
       <div class="before"></div>
       <div class="after"></div>
     </div>
-    С Днем Рождения!
+    <img style={{ width: '100%' }} src={Final} alt="happy birthday!"/>
   </Typography>,
 ];
 
@@ -97,19 +127,19 @@ const Slider = () => {
 
   React.useEffect(() => {
     setTimeout(() => setIsShown(true), 500);
-    const interval = setTimeout(() => {
-      if (finalSlides[currentslide + 1]) {
-        setIsShown(false);
-        setTimeout(() => setSlide((oldSlide) => oldSlide + 1), 300);
-        
-        return
-      }
-      clearTimeout(interval)
-    }, 7000)
   }, [currentslide]);
 
+  const handleNextClick = () => {
+    if (finalSlides[currentslide + 1]) {
+      setIsShown(false);
+      setTimeout(() => setSlide((oldSlide) => oldSlide + 1), 300);
+    }
+  }
+
+  const Component = finalSlides[currentslide];
+
   return <Fade in={isShown}>
-    {finalSlides[currentslide]}
+    <Component onClick={handleNextClick} />
   </Fade>
 }
 
@@ -190,17 +220,6 @@ const STATUSES = {
   result: 'result'
 }
 
-const getOftenElement = arr => {
-  const b=[];
-  let max='', maxi=0;
-  for(var k in arr) {
-      b[k] ? b[k]++ : b[k]=1;
-      if(maxi<b[k]) { max=k; maxi=b[k] }
-  }
-
-  return maxi
-}
-
 
 const theme = createMuiTheme({
   typography: {
@@ -247,17 +266,12 @@ function App() {
 
   const isLastQuestion = currentQuestion === questionNumber -1;
 
-  const handleReset = () => {
-    setCurrentQuestion(0);
-    setStatus(STATUSES.init);
-  }
-
   const classes = useStyles();
 
   return (
     <div >
       <div className={'hiddenImages'}>
-        {[...Object.values(imageMapping), MainImg, Button1, Button2].map((image, index) => <img key={`${image}_${index}`} src={image} alt={image} />)}
+        {[...Object.values(imageMapping), MainImg, Final, Button1, Button2, Button3, Button4, Button5, Button6, Button7].map((image, index) => <img key={`${image}_${index}`} src={image} alt={image} />)}
       </div>
       <ThemeProvider theme={theme}>
         <CssBaseline />
@@ -278,7 +292,7 @@ function App() {
           {
             status === STATUSES.welcome &&
               <div className="welcomeScreen">
-                <p className={classes.welcomeText}>Данный тест поможет определить ваш реальный возраст. Постройтесь отвечать на вопросы быстро и долго не задумываясь над ними. Помните, лишь сердце подскажет правильный вариант ответа.</p>
+                <p className={classes.responsiveText}>Данный тест поможет определить ваш реальный возраст. Постарайтесь отвечать на вопросы быстро и долго не задумываясь над ними. Помните, лишь сердце подскажет правильный вариант ответа.</p>
                 <button className={classes.button} size="large" onClick={() => setStatus(STATUSES.question)}>
                   <img src={Button2} className={classes.buttonImage} alt="Начать" />
                 </button>

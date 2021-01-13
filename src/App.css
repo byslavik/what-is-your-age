@@ -41,7 +41,7 @@ body {
   max-width: 800px;
   display: block;
   margin: 0 auto;
-  border: 20px solid #dedcdc;
+  border: 7px solid #dedcdc;
 }
 
 .imgWithUpDownAnimation {
@@ -59,4 +59,29 @@ body {
 
 @keyframes upDown {
   to { transform: translateY(5%); }
+}
+
+.responsiveText {
+  font-size: 20px !important;
+}
+
+@media screen and (min-width: 768px) {
+
+  .responsiveText {
+    font-size: 32px !important;
+  }
+}
+
+.button {
+  background: transparent;
+  border: none;
+  width: 300px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.buttonImage {
+  width: 100%;  
 }

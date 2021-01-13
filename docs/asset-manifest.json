@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/what-is-my-age/static/css/main.e12a8988.chunk.css",
-    "main.js": "/what-is-my-age/static/js/main.d9f73ccf.chunk.js",
-    "main.js.map": "/what-is-my-age/static/js/main.d9f73ccf.chunk.js.map",
+    "main.js": "/what-is-my-age/static/js/main.9a85c461.chunk.js",
+    "main.js.map": "/what-is-my-age/static/js/main.9a85c461.chunk.js.map",
     "runtime-main.js": "/what-is-my-age/static/js/runtime-main.4516721e.js",
     "runtime-main.js.map": "/what-is-my-age/static/js/runtime-main.4516721e.js.map",
     "static/js/2.6184a0e6.chunk.js": "/what-is-my-age/static/js/2.6184a0e6.chunk.js",
     "static/js/2.6184a0e6.chunk.js.map": "/what-is-my-age/static/js/2.6184a0e6.chunk.js.map",
     "index.html": "/what-is-my-age/index.html",
-    "precache-manifest.44aa7f669dfdc5c663fc9af57744a6a8.js": "/what-is-my-age/precache-manifest.44aa7f669dfdc5c663fc9af57744a6a8.js",
+    "precache-manifest.f6ae0c8c4dcf524ef5eb0c7d09b07383.js": "/what-is-my-age/precache-manifest.f6ae0c8c4dcf524ef5eb0c7d09b07383.js",
     "service-worker.js": "/what-is-my-age/service-worker.js",
     "static/css/main.e12a8988.chunk.css.map": "/what-is-my-age/static/css/main.e12a8988.chunk.css.map",
     "static/js/2.6184a0e6.chunk.js.LICENSE.txt": "/what-is-my-age/static/js/2.6184a0e6.chunk.js.LICENSE.txt",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.4516721e.js",
     "static/js/2.6184a0e6.chunk.js",
     "static/css/main.e12a8988.chunk.css",
-    "static/js/main.d9f73ccf.chunk.js"
+    "static/js/main.9a85c461.chunk.js"
   ]
 }

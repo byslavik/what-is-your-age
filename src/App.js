@@ -139,7 +139,9 @@ const Slider = () => {
   const Component = finalSlides[currentslide];
 
   return <Fade in={isShown}>
-    <Component onClick={handleNextClick} />
+    <div>
+      <Component onClick={handleNextClick} />
+    </div>
   </Fade>
 }
 

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/what-is-my-age/static/css/main.33bcf8fa.chunk.css",
+    "main.css": "/what-is-my-age/static/css/main.65d87af3.chunk.css",
     "main.js": "/what-is-my-age/static/js/main.c69c883c.chunk.js",
     "main.js.map": "/what-is-my-age/static/js/main.c69c883c.chunk.js.map",
     "runtime-main.js": "/what-is-my-age/static/js/runtime-main.4516721e.js",
@@ -8,9 +8,9 @@
     "static/js/2.6184a0e6.chunk.js": "/what-is-my-age/static/js/2.6184a0e6.chunk.js",
     "static/js/2.6184a0e6.chunk.js.map": "/what-is-my-age/static/js/2.6184a0e6.chunk.js.map",
     "index.html": "/what-is-my-age/index.html",
-    "precache-manifest.a029eaf76b6a0744f03f14b7be580684.js": "/what-is-my-age/precache-manifest.a029eaf76b6a0744f03f14b7be580684.js",
+    "precache-manifest.67c8e93e9c2e12387b40bc0d56f5a943.js": "/what-is-my-age/precache-manifest.67c8e93e9c2e12387b40bc0d56f5a943.js",
     "service-worker.js": "/what-is-my-age/service-worker.js",
-    "static/css/main.33bcf8fa.chunk.css.map": "/what-is-my-age/static/css/main.33bcf8fa.chunk.css.map",
+    "static/css/main.65d87af3.chunk.css.map": "/what-is-my-age/static/css/main.65d87af3.chunk.css.map",
     "static/js/2.6184a0e6.chunk.js.LICENSE.txt": "/what-is-my-age/static/js/2.6184a0e6.chunk.js.LICENSE.txt",
     "static/media/age.jpg": "/what-is-my-age/static/media/age.a79fa04f.jpg",
     "static/media/button1.png": "/what-is-my-age/static/media/button1.1bba742e.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.4516721e.js",
     "static/js/2.6184a0e6.chunk.js",
-    "static/css/main.33bcf8fa.chunk.css",
+    "static/css/main.65d87af3.chunk.css",
     "static/js/main.c69c883c.chunk.js"
   ]
 }
